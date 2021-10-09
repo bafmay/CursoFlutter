@@ -1,0 +1,132 @@
+void main() {
+  // Ejercicio 1
+  int num1=22,num2=142,num3=25;
+  
+  int higherNumber = getHigherNumber(num1,num2,num3);
+  print("Ejercicio 1");
+  print('El mayor numero de $num1, $num2 y $num3 es $higherNumber');
+  
+  print("");
+  
+  // Ejercicio 2
+  double num4=10,num5=2;
+  double plusResult = plus(num4,num5);
+  double minusResult = minus(num4,num5);
+  double timesResult = times(num4,num5);
+  double dividedResult = divided(num4,num5);
+  print("Ejercicio 2");
+  print('Para los numeros $num4 y $num5: La suma es $plusResult, la resta es $minusResult, la multiplicacion es $timesResult y la division es $dividedResult');
+  
+  print("");
+  
+  // Ejercicio 3
+  print("Ejercicio 3");
+  print("Los items de los animales:");
+  printArray();
+    
+  print("");
+  
+  //Ejercicio 4
+  print("Ejercicio 4");
+  combineList();
+  
+  print("");
+  
+  //Ejercicio 5
+  print("Ejercicio 5");
+  printList([2,"Item",4.3]);
+  
+  print("");
+  
+  //Ejercicio 6
+  print("Ejercicio 6");
+  printTwoList(stringList: ["hola","curso"], intList: [2,1,2,3]);
+  
+  print("");
+  
+  //Ejercicio 7
+  print("Ejercicio 7");
+  print(getList());
+}
+
+
+// 1.- Crear un programa con 3 variables enteros e identificar cual es el mayor, usar IF, ELSEIF, ELSE
+
+int getHigherNumber(int num1,int num2, int num3){
+  
+   if(num1 > num2 && num1 > num3){
+     return num1;
+  } 
+  else if(num2 > num1 && num2 > num3){
+      return num2;
+  }else{
+     return num3;
+  }
+  
+}
+
+// 2.- Crear una calculadora (suma, resta, multiplicación, división), usar funciones 
+
+double plus(double num1,double num2) => num1 + num2;
+
+double minus(double num1, double num2) => num1 - num2;
+
+double times(double num1, double num2) => num1 * num2;
+
+double divided(double num1, double num2) => num1 / num2;
+
+// 3.- Recorrer los siguientes valores y mostrarlo en un print List<String> animals = ['Perro', 'Gato', 'Ratón']; lusar forEach y función de flecha
+
+void printArray(){
+  List<String> animals = ['Perro', 'Gato', 'Ratón'];
+  animals.forEach((animal) => print(animal));
+}
+
+/*
+ 4.- Combiar las siguientes listas y mostrarlo en un print 
+      List<String> animales = ['Conejo', 'Gato'];
+      List<String> mascotas = ['Tortuga', 'Perro'];
+      como resultado debe mostrar: [Conejo, Gato, Tortuga, Perro] 
+ */
+
+void combineList(){
+  List<String> animales = ['Conejo', 'Gato'];
+  List<String> mascotas = ['Tortuga', 'Perro'];
+  
+  List<String> combineList = animales + mascotas;
+  print("El listado combinado es: $combineList");
+}
+
+
+//5.- Crear una función y como parámetro me permita recibir una lista de String (pintar los valores)
+void printList(List list){
+  for(dynamic item in list){
+    print(item);
+  }
+  
+}
+
+// 6.- Crear una función con argumentos con Nombre, como parámetros reciba una lista de String y otra lista de Enteros (pintar los valores)
+void printTwoList({required List<String> stringList,required List<int> intList}){
+  print("Lista de strings : ");
+  stringList.forEach((item) => print(item));
+  print("");
+  print("Lista de enteros : ");
+  intList.forEach((item) => print(item));
+}
+
+//7.- Crear una función que me retorne una Lista de String
+List<String> getList() => ["Esta","es","una","Lista"];
+
+
+//8.- Crear una clase con 3 propiedades y mencionarlos en su constructor
+class MyClass{
+  int id;
+  String name;
+  String? description;
+  
+  MyClass({required this.id,required this.name,this.description});
+}
+
+
+
