@@ -1,16 +1,13 @@
-# tarea_sesion_2
+# Tarea Sesion 2
 
-A new Flutter project.
+<!--- Replace <OWNER> with your Github Username and <REPOSITORY> with the name of your repository. -->
+<!--- You can find both of these in the url bar when you open your repository in github. -->
+![Workflow result](https://github.com/jjrodcast/AndroidDevChallengeCompose/workflows/Check/badge.svg)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+## :scroll: Description
+Simple design with reutilizable components.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## :camera_flash: Screenshots
+<!-- You can add more screenshots here if you like -->
+<img src="/results/screenshot_1.png" width="260">&emsp;<img src="/results/screenshot_1.png" width="260">
