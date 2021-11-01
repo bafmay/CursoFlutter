@@ -27,7 +27,7 @@ class DetailSection extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 12.0),
-              const InterestedSection(),
+              Row(children: const [InterestedSection()]),
               const SizedBox(height: 32.0),
               TFButton(
                 text: "Buy Ticket \$272",

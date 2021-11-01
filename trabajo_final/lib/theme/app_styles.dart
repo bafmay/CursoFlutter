@@ -48,6 +48,22 @@ class AppStyles {
         .merge(style);
   }
 
+  static TextStyle? caption(BuildContext context, {TextStyle? style}) {
+    return Theme.of(context)
+        .textTheme
+        .caption
+        ?.copyWith(color: Colors.white)
+        .merge(style);
+  }
+
+  static TextStyle? body2(BuildContext context, {TextStyle? style}) {
+    return Theme.of(context)
+        .textTheme
+        .bodyText2
+        ?.copyWith(color: Colors.white)
+        .merge(style);
+  }
+
   static TextStyle? subtitle1(BuildContext context, {TextStyle? style}) {
     return Theme.of(context)
         .textTheme

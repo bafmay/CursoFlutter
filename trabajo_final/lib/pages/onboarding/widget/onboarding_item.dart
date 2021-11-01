@@ -23,7 +23,7 @@ class OnBoardingItem extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     void onSkipPressed() {
-      Navigator.push(
+      Navigator.pushReplacement(
         context,
         MaterialPageRoute(
           builder: (context) => const LoginPage(),

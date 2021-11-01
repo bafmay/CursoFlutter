@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trabajo_final/pages/detail/detail_page.dart';
+import 'package:trabajo_final/pages/home/home_page.dart';
 import 'package:trabajo_final/theme/app_styles.dart';
 import 'package:trabajo_final/widgets/button.dart';
 
@@ -45,10 +45,10 @@ class SignInForm extends StatelessWidget {
         TFButton(
           text: "SIGN IN",
           onPressed: () {
-            Navigator.push(
+            Navigator.pushReplacement(
               context,
               MaterialPageRoute(
-                builder: (context) => const DetailPage(),
+                builder: (context) => const HomePage(),
               ),
             );
           },
