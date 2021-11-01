@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/pages/login_page.dart';
+import 'package:food_app/pages/login/login_page.dart';
 import 'package:food_app/theme/apptheme.dart';
 
 class SplashPage extends StatelessWidget {
@@ -38,12 +38,26 @@ class SplashPage extends StatelessWidget {
               const Spacer(),
               GestureDetector(
                 onTap: () => {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const LoginPage(),
+                  Navigator.of(context).push(
+                    PageRouteBuilder(
+                      pageBuilder: (context, _, __) {
+                        return const LoginPage();
+                      },
+                      transitionsBuilder: (_, animation, __, child) {
+                        return FadeTransition(
+                          opacity: animation,
+                          child: child,
+                        );
+                      },
+                      transitionDuration: const Duration(milliseconds: 800),
                     ),
                   )
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const LoginPage(),
+                  //   ),
+                  // )
                 },
                 child: Container(
                   width: 300,

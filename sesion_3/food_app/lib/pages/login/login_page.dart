@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:food_app/pages/detail/detail_page.dart';
 import 'package:food_app/pages/home/home_page.dart';
+import 'package:food_app/pages/profile/profile_page.dart';
+import 'package:food_app/pages/tutorial/tutorial_page.dart';
 import 'package:food_app/theme/apptheme.dart';
 
 class LoginPage extends StatelessWidget {
@@ -52,7 +55,7 @@ class LoginPage extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const HomePage(),
+                        builder: (context) => const TutorialPage(),
                       ),
                     )
                   },

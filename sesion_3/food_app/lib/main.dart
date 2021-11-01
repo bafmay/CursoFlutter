@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:food_app/pages/login_page.dart';
-import 'package:food_app/pages/splash_page.dart';
+import 'package:food_app/pages/splash/splash_page.dart';
 
 void main() => runApp(const MyApp());
 
