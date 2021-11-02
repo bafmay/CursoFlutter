@@ -17,6 +17,7 @@ class HomeHeader extends StatelessWidget {
 
     return SliverAppBar(
       automaticallyImplyLeading: false,
+      pinned: true,
       backgroundColor: const Color(0xFF171F28),
       actions: [
         GestureDetector(
