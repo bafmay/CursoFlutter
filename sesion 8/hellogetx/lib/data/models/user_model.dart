@@ -1,3 +1,5 @@
+import 'package:get/state_manager.dart';
+
 class UserModel {
   UserModel({
     this.id,
@@ -12,6 +14,8 @@ class UserModel {
   String? firstName;
   String? lastName;
   String? avatar;
+
+  RxBool isFavorite = RxBool(false);
 
   factory UserModel.fromJson(Map<String, dynamic> json) => UserModel(
         id: json["id"],

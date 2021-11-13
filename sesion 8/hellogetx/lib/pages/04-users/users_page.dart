@@ -22,6 +22,7 @@ class UsersPage extends StatelessWidget {
                 itemBuilder: (context, index) {
                   final user = _.users[index];
                   return ListTile(
+                    onTap: () => _.goToProfile(user: user),
                     title: Text("${user.firstName} ${user.lastName}"),
                     subtitle: Text("${user.email}"),
                     leading: CircleAvatar(
